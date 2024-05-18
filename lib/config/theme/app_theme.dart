@@ -19,7 +19,13 @@ const List<Color> _colorForThemes = [
 class AppTheme {
   // Manejamos el color por default, de esta forma no esta fuera del inidice de List<Colors>
   final int selectedColor;
-  AppTheme({this.selectedColor = 0});
+  /* Usamos assert fuera del contructor para condicionar la variable que setea los colores de la list
+  La condiciono para que siempre sea -1 al tamaño total del list  
+  */
+  AppTheme({this.selectedColor = 0})
+      : assert(
+            selectedColor >= 0 && selectedColor <= _colorForThemes.length - 1,
+            'Los Colores deben deben ser entre 0 y ${_colorForThemes.length}');
 
   ThemeData theme() => ThemeData(
       useMaterial3: true, colorSchemeSeed: _colorForThemes[selectedColor]);
