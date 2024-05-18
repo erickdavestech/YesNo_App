@@ -8,6 +8,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // Config-Theme-app_theme.dart
       theme: AppTheme().theme(),
       // Elimamos el barnner de debug
       debugShowCheckedModeBanner: false,
