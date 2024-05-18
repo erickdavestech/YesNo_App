@@ -31,4 +31,5 @@ class AppTheme {
       useMaterial3: true,
       colorSchemeSeed: _colorForThemes[selectedColor],
       brightness: Brightness.dark); // brightnes to dark
+      
 }
