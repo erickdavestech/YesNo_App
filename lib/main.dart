@@ -9,7 +9,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // Config-Theme-app_theme.dart
-      theme: AppTheme().theme(),
+      // Set customColor 2 color is -> teal,
+      theme: AppTheme(selectedColor: 2).theme(),
       // Elimamos el barnner de debug
       debugShowCheckedModeBanner: false,
     );

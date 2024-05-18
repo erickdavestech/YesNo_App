@@ -17,6 +17,10 @@ const List<Color> _colorForThemes = [
 ];
 
 class AppTheme {
-  ThemeData theme() =>
-      ThemeData(useMaterial3: true, colorSchemeSeed: _colorForThemes[2]);
+  // Manejamos el color por default, de esta forma no esta fuera del inidice de List<Colors>
+  final int selectedColor;
+  AppTheme({this.selectedColor = 0});
+
+  ThemeData theme() => ThemeData(
+      useMaterial3: true, colorSchemeSeed: _colorForThemes[selectedColor]);
 }
