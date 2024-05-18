@@ -28,5 +28,7 @@ class AppTheme {
             'Los Colores deben deben ser entre 0 y ${_colorForThemes.length}');
 
   ThemeData theme() => ThemeData(
-      useMaterial3: true, colorSchemeSeed: _colorForThemes[selectedColor]);
+      useMaterial3: true,
+      colorSchemeSeed: _colorForThemes[selectedColor],
+      brightness: Brightness.dark); // brightnes to dark
 }

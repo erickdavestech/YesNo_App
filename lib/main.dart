@@ -10,7 +10,8 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       // Config-Theme-app_theme.dart
       // Set customColor 2 color is -> teal,
-      theme: AppTheme(selectedColor: 7).theme(),
+      // Set Dark BrightNess 
+      theme: AppTheme(selectedColor: 2).theme(),
       // Elimamos el barnner de debug
       debugShowCheckedModeBanner: false,
     );
