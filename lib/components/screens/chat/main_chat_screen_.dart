@@ -6,7 +6,7 @@ class MainChatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Position Arriba
+      // Position Arribas
       appBar: AppBar(
         // Mostramos antes del toolkit, le agregamos relleno
         leading: const Padding(
